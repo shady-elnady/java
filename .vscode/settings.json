@@ -1,0 +1,8 @@
+{
+    "[markdown]": {
+        "editor.quickSuggestions": {
+            "other": "on"
+        },
+        "editor.wordBasedSuggestions": "off"
+    }
+}
