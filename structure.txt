@@ -1,0 +1,40 @@
+
+
+src/main/
+    ├──resources/
+    ├──java/
+    |   ├──com/
+    |       ├──example/
+    |           ├── App.java
+    |           ├── config/
+    |           |    ├── MvcConfig.java
+    |           |    ├──RootConfig.java
+    |           |
+    |           ├──core\
+    |           |    ├── Media\
+    |           |    ├── language\
+    |           |    ├── base\
+    |           |    ├── auth\
+    |           |
+    |           ├──modules\
+    |           |    ├── category\
+    |           |    ├── product\
+    |           |    ├── cart\
+    |
+    ├──webapp/
+        ├── index.jsp
+        ├── resources/
+        │   ├── css/
+        │   │   └── style.css
+        │   ├── js/
+        │   │   └── app.js
+        │   ├── images/
+        │   │   ├── spring-logo.png
+        │   │   └── favicon.ico
+        │   └── fonts/
+        └── WEB-INF/
+            ├── web.xml
+            ├── dispatcher-servlet.xml
+            └── views/
+                └── hello.jsp
+

@@ -10,7 +10,7 @@ echo ========================================
 set "BIN_DIR=%~dp0"
 set "PROJECT_DIR=%~dp0..\"
 set "WAR_FILE=target\myspringapp.war"
-set "TOMCAT_WEBAPPS=C:\apache-tomcat-9.0.108\webapps"
+set "TOMCAT_WEBAPPS=C:\apache-tomcat-11.0.0\webapps"
 
 :: Change to project root directory (one level up from bin)
 cd /d "%PROJECT_DIR%"

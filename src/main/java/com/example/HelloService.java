@@ -1,21 +1,11 @@
 package com.example;
 
-public class HelloService {
-    private String message;
+import org.springframework.stereotype.Service;
 
-    public void setMessage(String message) {
-        this.message = message;
-    }
+@Service
+public class HelloService {
 
     public String getMessage() {
-        return message;
-    }
-
-    public void sayHello() {
-        System.out.println("Spring says: " + message);
-    }
-
-    public String getHtmlMessage() {
-        return "<h3>" + message + "</h3><p>Current time: " + new java.util.Date() + "</p>";
+        return "Hello from Spring MVC with Tomcat 11!";
     }
 }

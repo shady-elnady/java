@@ -1,22 +1,34 @@
-<!DOCTYPE html>
-<html>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+    <html>
 
-<head>
-    <title>My Spring Web App</title>
-</head>
+    <head>
+        <link rel="icon" type="image/x-icon" href="${pageContext.request.contextPath}/images/favicon.ico">
+        <title>My Spring App</title>
+        <link href="${pageContext.request.contextPath}/css/style.css" rel="stylesheet">
+    </head>
 
-<body>
-    <h1>Welcome to My Spring Web Application</h1>
-    <p>This JSP page is served by Tomcat with Spring framework.</p>
+    <body>
+        <div class="container">
+            <div class="header">
+                <h1>Welcome to Spring MVC with Tomcat 11</h1>
+            </div>
 
-    <h2>Test Spring Beans:</h2>
-    <form action="hello" method="post">
-        <input type="submit" value="Test Spring Service">
-    </form>
+            <div class="image-container">
+                <img src="${pageContext.request.contextPath}/images/spring-logo.png" alt="Spring Logo"
+                    class="spring-logo">
+            </div>
 
-    <p>
-        <%= new java.util.Date() %>
-    </p>
-</body>
+            <div style="text-align: center;">
+                <a href="${pageContext.request.contextPath}/hello" class="button">Go to Hello Page</a>
+                <a href="#" class="button" id="testButton">Test JavaScript</a>
+            </div>
 
-</html>
+            <footer style="text-align: center; margin-top: 40px; color: #666;">
+                <p>&copy; <span id="current-year"></span> My Spring Application</p>
+            </footer>
+        </div>
+
+        <script src="${pageContext.request.contextPath}/js/app.js"></script>
+    </body>
+
+    </html>
